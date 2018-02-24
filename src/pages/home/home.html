@@ -1,14 +1,15 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content class="sredina">
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <div col-12 class="move1">
+    <h4>Hi, I am your Task Monster</h4>
+    <p>Before start please Login or Register!</p>
+  </div>
+<div class="skull"> <img src="../assets/imgs/head2.png"> </div>
+  <div col-12 class="move">
+    <button ion-button block round (click)="prijava()" color="light" outline>Login</button>
+    <button ion-button block round  (click)="registracija()" color="light" outline>Register</button>
+    <span (click)="resetpwd()">Forgot your password?</span>
+  </div>
+
 </ion-content>

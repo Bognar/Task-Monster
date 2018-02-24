@@ -1,16 +1,57 @@
-// http://ionicframework.com/docs/theming/
+.card-header-md {
 
-
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #dddddd;
+    padding: 5px;
+    background-color: #1E1E1E;
+}
+.card-header-ios {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #dddddd;
+    padding: 5px;
+    background-color: #1E1E1E;
+}
+.card-header-wp {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #dddddd;
+    padding: 5px;
+    background-color: #1E1E1E;
+}
+.ion-page.show-page {
+    background-image: url("../assets/imgs/Untitled-1.png");
+background-color: transparent;
+}
+.content-md {
+    background:transparent;
+}
+.content-wp {
+    background:transparent;
+}
+.content-ios {
+    background:transparent;
+}
+.item-md {
+    background:transparent;
+}
+.item-wp {
+    background:transparent;
+}
+.item-ios {
+    background:transparent;
+}
+.toolbar-background-md {
+    background:transparent;
+}
+.toolbar-background-wp {
+    background:transparent;
+}
+.toolbar-background-ios {
+    background:transparent;
+}
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+}

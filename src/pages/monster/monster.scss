@@ -1,0 +1,155 @@
+page-monster {
+    .finished {
+        float: right;
+        width: 95%;
+        display: block;
+        font-size: 1.4rem;
+        border-radius: 5px;
+        font-family: monospace;
+        margin: 10px;
+        border: 1px dashed #888;
+        padding: 5px;
+    
+      }
+      .ghost {
+        width:90px;
+        height:90px;
+        display:block;
+      }
+      .red {
+        color: #000000;
+        font-size: 2rem;
+        font-weight: bolder;
+        text-shadow: 1px 1px 4px #000;
+        position: absolute;
+        left: 160px;
+        top: 10px;
+        text-transform: uppercase;
+      }
+      .red2 {
+        color: #000000;
+        font-size: 2rem;
+        font-weight: bolder;
+        text-shadow: 1px 1px 4px #000;
+        position: absolute;
+        left: 160px;
+        top: 35px;
+        text-transform: uppercase;
+      }
+      .red3 {
+        color: #000000;
+        font-size: 2rem;
+        font-weight: bolder;
+        text-shadow: 1px 1px 4px #000;
+        position: absolute;
+        left: 170px;
+        top: 65px;
+        text-transform: uppercase;
+      }
+      .red4 {
+        color: #000000;
+        font-size: 2rem;
+        font-weight: bolder;
+        text-shadow: 1px 1px 4px #000;
+        position: absolute;
+        left: 70px;
+        top: 97px;
+        text-transform: uppercase;
+      }
+      .monsterimage {
+        float: left;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        left: 120px;
+        top: 140px;
+    }
+     
+      .finished2 {
+        float: left;
+        width: 100%;
+        display: block;
+        color: #fff;
+        height: 180px;
+        background-position: center;
+        font-size: 1.4rem;
+        background-repeat: no-repeat;
+        background-size: 290px;
+        background-image: url(../assets/imgs/status.png);
+        border-radius: 5px;
+        font-family: monospace;
+        padding: 30px;
+    
+      }
+      
+      .monname {
+        display: block;
+        width: 100%;
+        text-align: center;
+        top: 240px;
+        color: #fff;
+        right: 30px;
+        top: 230px;
+        height: auto;
+        position: absolute;
+        
+      }
+      .monname2 {
+        display: block;
+        width: 100%;
+        text-align: center;
+        top: 240px;
+        color: #fff;
+        right: 30px;
+        top: 10px;
+        height: auto;
+        position: absolute;
+        
+      }
+      .montitle {
+         
+          display: block;
+          width: 100%;
+          text-align: center;
+          top: 240px;
+          color: #fff;
+          right: 30px;
+          top: 200px;
+          height: auto;
+          position: absolute;
+      }
+      .tekst {
+        position: relative;
+        width: 100%;
+        height: auto;
+        float: left;
+        text-align: center;
+        
+    
+      }
+      .infotekst {
+          padding-top: 40px;
+          display: block;
+          width: 100%;
+          text-align: center;
+          height: auto;
+          float: left;
+          margin: 0 auto;
+          color: #fff;
+          position: relative;
+      }
+      .monname2 {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        right: 40px;
+        height: auto;
+        position: absolute;
+      }
+      .item-md.item-block .item-inner {
+        border-bottom: none;
+      }
+      
+}

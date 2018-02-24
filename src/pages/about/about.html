@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons left>
+      <button ion-button clear color="light" (click)="logout()">
+        <ion-icon name="log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title color="light">Task Monster</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="light" (click)="monster(fine)">
+        <ion-icon name="outlet"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button ion-button icon-only color="light" (click)="hall()">
+        <ion-icon name="medal"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button ion-button icon-only color="light" (click)="info()">
+        <ion-icon name="information-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="mjenjamo">
+
+  <div class="finished">
+<span class="monsterposition"><img src="../assets/imgs/head2.png"></span>
+
+    <span class="red">{{fine}}</span>
+    <br>
+    <span class="red2">{{mStatus(fine)}}</span>
+    <br>
+
+  </div>
+
+  <div *ngFor="let to of unData; let i = index" class="mainfor">
+
+    <ion-grid>
+      <ion-row col-12>
+        <div class="lijevocard">
+          <ion-icon name="bookmark" style="font-size:50px" [style.color]="to.colordb"></ion-icon>
+        </div>
+
+        <div class="cardheader">
+          <ion-icon name="alarm">&nbsp;
+            <span class="datetime">{{to.myDate | date:"medium"}}</span>
+          </ion-icon>
+
+          <ion-icon style="float:right;" name="close" (click)="delete(to.key)"></ion-icon>
+
+
+
+        </div>
+
+        <div class="cardcontent">
+          {{to.desc}}
+        </div>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+
+
+
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-list>
+
+      <ion-item>
+        <ion-label fixed color="dark">When:</ion-label>
+        <ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="myDate" required></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed color="dark">Desc:</ion-label>
+        <ion-input type="text" [(ngModel)]="desc" required></ion-input>
+      </ion-item>
+
+      <button ion-button icon-only round block (click)="postDatatoDB(myDate, desc)" color="light" outline>
+        <ion-icon name="checkmark-circle"></ion-icon>
+      </button>
+
+
+    </ion-list>
+  </ion-toolbar>
+</ion-footer>

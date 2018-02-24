@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title color="light">Login</ion-title>
+    </ion-navbar>
+  </ion-header>
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>e-mail</ion-label>
+      <ion-input type="text" #username></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" #password></ion-input>
+    </ion-item><br />
+    <button ion-button block round (click)="sendlogin()" color="light" outline>Login</button>
+  </ion-list>
+</ion-content>
+

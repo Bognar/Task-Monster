@@ -1,0 +1,111 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Your Monster Info</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  
+  <div *ngIf="avatar[1] == null; else showmymob">
+      <div class="monname2"> <h2>#1 Name your monster</h2></div>
+      <br> <br>
+      <ion-item color="dark">
+          <ion-label fixed>Enter Name</ion-label>
+          <ion-input outline color="light" type="text" #monstername required></ion-input>
+        </ion-item>
+        <br><br>
+        <ion-item color="dark">
+            <ion-label>Entered Monster Name</ion-label>
+           
+            <ion-checkbox color="light" outline checked="False" [(ngModel)]="go" (check)="go=true">></ion-checkbox>
+          </ion-item><br>
+         <ion-icon name="information-circle" color="light"> &nbsp; <i>Plese be sure you have entered the name for your monster!</i></ion-icon><br><br>
+    <div class="monname" *ngIf="go == true"><h2>#2 Chose your Monster</h2></div>
+    <br>
+    <div (click)="pongo(monstername)" *ngIf="go == true">
+    <ion-list>
+      <ion-item color="dark">
+        <ion-avatar item-start>
+          <img src="../assets/ghosts/sprite1.png">
+        </ion-avatar>
+        <h2>Pongo</h2>
+
+        <p>Hyperactive and very silly!</p>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div (click)="Fluffy(monstername)" *ngIf="go == true">
+    <ion-list>
+      <ion-item color="dark">
+        <ion-avatar item-start>
+          <img src="../assets/ghosts/sprite2.png">
+        </ion-avatar>
+        <h2>Fluffy</h2>
+
+        <p>Loves his peace and freedom!</p>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div (click)="Happy(monstername)" *ngIf="go == true">
+    <ion-list>
+      <ion-item color="dark">
+        <ion-avatar item-start>
+          <img src="../assets/ghosts/sprite3.png">
+        </ion-avatar>
+        <h2>Happy</h2>
+
+        <p>Grumpy, but loves pizza!</p>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div (click)="Lemono(monstername)" *ngIf="go == true">
+    <ion-list>
+      <ion-item color="dark">
+        <ion-avatar item-start>
+          <img src="../assets/ghosts/sprite4.png">
+        </ion-avatar>
+        <h2>Lemono</h2>
+
+        <p>Bitter crazy monster!</p>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div (click)="Zooka(monstername)" *ngIf="go == true">
+    <ion-list>
+      <ion-item color="dark">
+        <ion-avatar item-start>
+          <img src="../assets/ghosts/sprite5.png">
+        </ion-avatar>
+        <h2>Zooka</h2>
+
+        <p>Sick of tasks, feed him!</p>
+      </ion-item>
+    </ion-list>
+  </div>
+  </div>
+  <ng-template #showmymob>
+    
+      <div class="finished2">
+        
+         <div class="tekst">
+          <span class="red">{{fine}}</span>
+          <br> 
+          <span class="red2">{{mStatus(fine)}}</span>
+          <br> 
+          <span class="red3">{{fine / 50}}</span>
+          <br> 
+          <span class="red4"> {{avatar[4]}}</span>
+        </div></div>
+        <div class="montitle"><h3>{{avatar[3]}}</h3></div>
+        <br>
+       <div class="monsterimage"> <img src="../assets/ghosts/{{avatar[0]}}"></div>
+<br>
+<div class="infotekst">
+<ion-icon name="pizza" color="light" left></ion-icon>&nbsp;{{avatar[3]}} grows by eating tasks, thus the more you work, the more will he level up.  
+<br>
+<ion-icon name="quote" color="light" left></ion-icon>&nbsp;I am super active when it comes to chewing!</div>
+  </ng-template>
+</ion-content>

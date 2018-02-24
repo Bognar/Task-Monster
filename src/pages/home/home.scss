@@ -1,3 +1,31 @@
 page-home {
-
+.sredina{
+    text-align:center;
+    position:relative;
+    
+    background-position:center; 
+    color:#ffffff;
+} 
+.move1 {
+    position:absolute; 
+    top:60px;
+} 
+.move {
+    position:absolute; 
+    bottom:50px;
+    width:100%;
+}
+.fixed-content {
+    background-image:url("../assets/imgs/Untitled-1.png");
+}
+.skull {
+    text-align: center;
+    width: 100%;
+    max-width: 100px;
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 60%;
+    max-height: 50px;
+}
 }

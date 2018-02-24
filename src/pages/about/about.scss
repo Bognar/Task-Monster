@@ -1,0 +1,128 @@
+page-about {
+    .cardheader {
+      margin-left: 30px;
+      width: 100%;
+      font-size: 1.3rem;
+      
+      text-shadow: 1px 0px 1px #000;
+      font-weight: bolder;
+      display: block;
+      color: #f2f1da;
+
+      }
+    
+    .cardcontent {
+      font-size: 1.4rem;
+      color: #080808;
+      margin: 10px 5px;
+      border-radius: 10px;
+    
+    
+    }
+    .lijevocard {
+      float: left;
+      width: auto;
+      position: absolute;
+      display: block;
+      text-shadow: 2px 2px 4px #000;
+      height: 100%;
+      top: -12px;
+      left: 5px;
+      min-height: 40px;
+
+    }
+  .mainfor {
+    display: block;
+    width: -webkit-fill-available;
+    float: left;
+    border: 1px solid #f2f1da;
+    box-shadow: 1px 1px 1px #555;
+    position: relative;
+    z-index: 999;
+    border-radius: 0px 10px;
+    margin: 5px 10px;
+  }
+  .datetime {
+    font-family:sans-serif;
+  }
+  .item-inner {
+    border-bottom:none;
+  }
+ 
+  .finished {
+    width: 100%;
+    display: block;
+    float: left;
+    background-position: center;
+    height: 130px;
+    font-size: 1.4rem;
+    background-repeat: no-repeat;
+    background-image: url(../assets/imgs/score.png);
+    background-size: 240px;
+    font-family: monospace;
+    background-position-y: 10px;
+
+  }
+  .ghost {
+    width:90px;
+    height:90px;
+    display:block;
+  }
+  .red {
+    color: #000;
+    font-size: 2rem;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: rotatez(8deg);
+    transform: rotatez(-8deg);
+    font-weight: bolder;
+    text-shadow: 1px 1px 4px #000;
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 75px -40px;
+  }
+  .red2 {
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    text-shadow: 1px 1px 4px #000;
+    position: absolute;
+    transform: rotatez(8deg);
+    text-transform: uppercase;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: 65px 35px;
+  }
+   
+  .mega {
+    position: relative;
+    z-index: 100;
+    display: block;
+    width: 100%;
+    height: auto;
+    top: 0px;
+    text-align: center;
+    margin: 0 auto;
+    float: left;
+  }
+ 
+.content-md {
+    background:transparent;
+}
+.content-wp {
+    background:transparent;
+}
+.content-ios {
+    background:transparent;
+}
+.monsterposition {
+  width: 30px;
+  height: auto;
+  left: 46%;
+  top: 15px;
+  position: absolute;
+}
+
+};
