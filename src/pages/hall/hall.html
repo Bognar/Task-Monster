@@ -9,15 +9,16 @@
 
 
 <ion-content padding>
+    <span class="topten">Top monster tamers</span>
   <div *ngFor="let to of avatarhall; let i = index">
       <ion-list>
           <ion-item>
             <ion-thumbnail item-start>
-              <img src="../assets/ghosts/{{to.avatar}}">
+              <img src="assets/ghosts/{{to.avatar}}">
             </ion-thumbnail>
-            <h1> {{to.monstername}}</h1>
-            <p>Finished Tasks:{{to.finished}}</p>
-            <ion-icon name="star" item-end>{{i +1}}</ion-icon>
+            <span class="namewiner"> {{to.monstername}}</span>
+            <span class="finishedhall">Finished Tasks:</span> <span class="finishedres"> {{to.finished}}</span>
+            <ion-icon name="star" item-end class="starcolor">{{i +1}}</ion-icon>
           </ion-item>
         </ion-list>
 

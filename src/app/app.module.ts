@@ -19,6 +19,7 @@ import { HallPage } from '../pages/hall/hall';
 import { InfoPage } from '../pages/info/info';
 import { ResetPage } from '../pages/reset/reset';
 
+
 const firebaseAuth = {
   apiKey: "AIzaSyAvF3OOIEsNc893LB6cYLjupvVgX4Kh3Wk",
   authDomain: "loginproject-4cc14.firebaseapp.com",
@@ -39,6 +40,7 @@ const firebaseAuth = {
     HallPage,
     InfoPage,
     ResetPage
+    
   ],
   imports: [
     BrowserModule,

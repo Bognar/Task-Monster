@@ -1,8 +1,8 @@
 {
-  "name": "Manga",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "name": "taskmonster",
+  "version": "1.0",
+  "author": "iFun Studios",
+  "homepage": "http://bognar.github.io",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -42,7 +42,7 @@
     "@ionic/app-scripts": "3.1.8",
     "typescript": "2.4.2"
   },
-  "description": "An Ionic project",
+  "description": "Task manager and monster evolution application.",
   "cordova": {
     "plugins": {
       "cordova-plugin-whitelist": {},

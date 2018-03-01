@@ -1,4 +1,24 @@
 page-info {
-    
+    .infotekst {
+        padding-top: 40px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        text-shadow: 1px 0px 1px #000;
+        height: auto;
+        float: left;
+        margin: 0 auto;
+        color: #fff;
+        position: relative;
+    }
 
+    .moninfo {
+        display: block;
+        width: auto;
+        top: 30px;
+        text-align: center;
+        position: relative;
+        max-width: 50px;
+        margin: 0 auto;
+    }
 }

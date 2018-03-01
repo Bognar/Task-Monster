@@ -69,24 +69,24 @@ page-about {
     display:block;
   }
   .red {
-    color: #000;
+    color: greenyellow;
     font-size: 2rem;
     height: 100%;
     width: 100%;
     -webkit-transform: rotatez(8deg);
     transform: rotatez(-8deg);
     font-weight: bolder;
-    text-shadow: 1px 1px 4px #000;
+    
     position: absolute;
     text-transform: uppercase;
     text-align: center;
     margin: 75px -40px;
   }
   .red2 {
-    color: #000;
+    color: greenyellow;
     font-size: 1.8rem;
     font-weight: bolder;
-    text-shadow: 1px 1px 4px #000;
+    
     position: absolute;
     transform: rotatez(8deg);
     text-transform: uppercase;

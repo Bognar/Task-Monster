@@ -13,21 +13,22 @@ import { AngularFireAuth } from 'angularfire2/auth';
   templateUrl: 'hall.html',
 })
 export class HallPage {
-  avatarhall = [];
-
+  avatarhall = <any>[];
+  
   constructor(public navCtrl: NavController, public navParams: NavParams, private db: AngularFireDatabase, private fire: AngularFireAuth) {
 
   }
 
   ionViewDidLoad() {
-    
+
     this.db.list(`/avatars/`).valueChanges().subscribe(d => {
-      this.avatarhall = d;
       
-      
-      
+      this.avatarhall = d.sort((a,b) => (a as any).finished - (b as any).finished).reverse();
+           
     });
+    
 
   }
+
 
 }
