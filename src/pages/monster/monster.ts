@@ -1,11 +1,10 @@
 import { Component, ViewChild  } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
 import { Observable } from 'rxjs/Observable';
 import { AngularFireAuth } from 'angularfire2/auth';
 
 
-@IonicPage()
 @Component({
   selector: 'page-monster',
   templateUrl: 'monster.html',
@@ -57,35 +56,40 @@ export class MonsterPage {
   }
   
 }
-pongo(adresa:string, chosen:boolean, name:string, mname:string) {
+pongo(adresa:string, chosen:boolean, name:string, mname:string, finished:number) {
   this.adresa = "sprite1.png"
   this.name = "Pongo";
+  finished=0;
   
-  this.db.object(`/avatars/${this.userId}/`).set({avatar:this.adresa, chosen :false, name:this.name, monstername:this.mname.value});
+  this.db.object(`/avatars/${this.userId}/`).set({avatar:this.adresa, chosen :false, name:this.name, finished:finished, monstername:this.mname.value});
   
 }
-Fluffy(adresa:string, chosen:boolean, name:string) {
+Fluffy(adresa:string, chosen:boolean, name:string, finished:number) {
   this.adresa = "sprite2.png"
   this.name = "Fluffy";
-  this.db.object(`/avatars/${this.userId}/`).set({avatar:this.adresa, chosen :false, name:this.name, monstername:this.mname.value});
+  finished=0;
+  this.db.object(`/avatars/${this.userId}/`).set({avatar:this.adresa, chosen :false, name:this.name,finished:finished, monstername:this.mname.value});
   
 }
-Happy(adresa:string, chosen:boolean, name:string) {
+Happy(adresa:string, chosen:boolean, name:string, finished:number) {
   this.adresa = "sprite3.png"
   this.name = "Happy";
-  this.db.object(`/avatars/${this.userId}/`).set({avatar:this.adresa, chosen :false, name:this.name, monstername:this.mname.value});
+  finished=0;
+  this.db.object(`/avatars/${this.userId}/`).set({avatar:this.adresa, chosen :false, name:this.name,finished:finished, monstername:this.mname.value});
   
 }
-Lemono(adresa:string, chosen:boolean, name:string) {
+Lemono(adresa:string, chosen:boolean, name:string, finished:number) {
   this.adresa = "sprite4.png"
   this.name = "Lemono";
-  this.db.object(`/avatars/${this.userId}/`).set({avatar:this.adresa, chosen :false, name:this.name, monstername:this.mname.value});
+  finished=0;
+  this.db.object(`/avatars/${this.userId}/`).set({avatar:this.adresa, chosen :false, name:this.name,finished:finished, monstername:this.mname.value});
   
 }
-Zooka(adresa:string, chosen:boolean, name:string) {
+Zooka(adresa:string, chosen:boolean, name:string, finished:number) {
   this.adresa = "sprite5.png"
   this.name = "Zooka";
-  this.db.object(`/avatars/${this.userId}/`).set({avatar:this.adresa, chosen :false, name:this.name, monstername:this.mname.value});
+  finished=0;
+  this.db.object(`/avatars/${this.userId}/`).set({avatar:this.adresa, chosen :false, name:this.name,finished:finished, monstername:this.mname.value});
   
 }
 

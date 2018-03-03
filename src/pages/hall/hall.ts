@@ -1,5 +1,5 @@
 import { Component, ViewChild  } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
 import { Observable } from 'rxjs/Observable';
 import { AngularFireAuth } from 'angularfire2/auth';
@@ -7,7 +7,7 @@ import { AngularFireAuth } from 'angularfire2/auth';
 
 
 
-@IonicPage()
+
 @Component({
   selector: 'page-hall',
   templateUrl: 'hall.html',

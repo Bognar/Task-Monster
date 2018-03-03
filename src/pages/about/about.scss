@@ -15,6 +15,8 @@ page-about {
       font-size: 1.4rem;
       color: #080808;
       margin: 10px 5px;
+      display: block;
+      min-height: 20px;
       border-radius: 10px;
     
     
@@ -50,11 +52,12 @@ page-about {
   }
  
   .finished {
-    width: 100%;
+    width: 250px;
     display: block;
-    float: left;
+    position: relative;
     background-position: center;
     height: 130px;
+    margin: 0 auto;
     font-size: 1.4rem;
     background-repeat: no-repeat;
     background-image: url(../assets/imgs/score.png);
@@ -80,7 +83,7 @@ page-about {
     position: absolute;
     text-transform: uppercase;
     text-align: center;
-    margin: 75px -40px;
+    margin: 75px -60px;
   }
   .red2 {
     color: greenyellow;
@@ -93,7 +96,7 @@ page-about {
     text-align: center;
     height: 100%;
     width: 100%;
-    margin: 65px 35px;
+    margin: 65px 60px;
   }
    
   .mega {
@@ -120,7 +123,7 @@ page-about {
 .monsterposition {
   width: 30px;
   height: auto;
-  left: 46%;
+  left: 110px;
   top: 15px;
   position: absolute;
 }
