@@ -87,27 +87,48 @@
   </div>
   </div>
   <ng-template #showmymob>
-    
-      <div class="finished2">
-        
-         <div class="tekst">
-          <span class="red">{{fine}}</span>
-          <br> 
-          <span class="red2">{{mStatus(fine)}}</span>
-          <br> 
-          <span class="red3">{{fine / 50}}</span>
-          <br> 
-          <span class="red4"> {{avatar[4]}}</span>
-        </div></div>
-        <div class="montitle"><h3>{{avatar[3]}}</h3></div>
-        <br>
-       <div class="monsterimage"> <img src="assets/ghosts/{{avatar[0]}}"></div>
-<br>
-<div class="infotekst">
-{{avatar[3]}} is your Task Monster and he grows by eating tasks. Each task you finish, by tapping "X" on the right corner of the taks, will make your {{avatar[3]}} grow. Growth will influence your Monster Title and with time, he will gain another title.<br>
-<p>There is also another thing to keep in the mind! By finishing tasks, you can get into Hall Of Fame top 10 monster tamers.</p>
-<br>
-So, please be good to your {{avatar[3]}} and feed him. 
-</div>
+  
+    <div class="finished2">
+  
+  
+  
+  
+      <div class="tekst">
+       <div class="getrow">
+        <span class="texttitles">Tasks:</span>
+        <div class="hollowbar">{{fine}}
+          <span [style.width]="fine +'px'" class="bariswidth"></span>
+        </div>
+      </div>
+      <div class="getrow">
+        <span class="texttitles">Title:</span>
+        <span class="red2">{{mStatus(fine)}}</span>
+      </div>
+      <div class="getrow">
+        <span class="texttitles">Growth:</span>
+        <div class="hollowbar">{{fine / 50}}<span class="red3 bariswidth" [style.width]="fine/50 +'px'" ></span></div>
+      </div>
+        <div class="getrow">
+        <span class="texttitles">Race:</span>
+        <span class="red4"> {{avatar[4]}}</span>
+      </div>
+    </div>
+    </div>
+    <div class="montitle">
+      <h3>{{avatar[3]}}</h3>
+    </div>
+    <br>
+    <div class="monsterimage">
+      <img src="assets/ghosts/{{avatar[0]}}">
+    </div>
+    <br>
+    <div class="infotekst">
+      {{avatar[3]}} is your Task Monster and he grows by eating tasks. Each task you finish, by tapping "X" on the right corner
+      of the taks, will make your {{avatar[3]}} grow. Growth will influence your Monster Title and with time, he will gain
+      another title.
+      <br>
+      <p>There is also another thing to keep in the mind! By finishing tasks, you can get into Hall Of Fame top 10 monster tamers.</p>
+      <br> So, please be good to your {{avatar[3]}} and feed him.
+    </div>
   </ng-template>
 </ion-content>
