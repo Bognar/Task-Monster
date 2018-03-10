@@ -26,6 +26,8 @@ export class AboutPage {
   letters = ['947CB0', '96281B', '013243', '67809F', '4B77BE', '4DAF7C', 'EC644B', '013243'];
   fine = [];
   status: string = '';
+  public tap: number = 0;
+  tapit:boolean = false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private db: AngularFireDatabase, private fire: AngularFireAuth) {
     this.fire.authState.subscribe(user => {
@@ -62,6 +64,8 @@ export class AboutPage {
     }
   }
   monster(fine) {
+    this.tapit = false;
+    this.tap = 0;
     this.navCtrl.push(MonsterPage, { fine: this.fine });
   }
   hall(fine) {
@@ -73,6 +77,10 @@ export class AboutPage {
   logout() {
     this.navCtrl.setRoot(HomePage, this.fine);
     this.fire.auth.signOut();
+  }
+  tapEvent(e) {
+    this.tap++;
+    this.tapit = true;
   }
   delete(key: string) {
     this.db.list("/tasks/" + this.userId + "/").remove(key);
