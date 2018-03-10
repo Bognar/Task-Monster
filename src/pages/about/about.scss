@@ -134,13 +134,17 @@ page-about {
 }
 .tapitout {
   position: absolute;
-  margin: 0 auto;
-  top: 0;
-  font-weight: bolder;
-  font-size: 15px;
-  color: crimson;
-  text-shadow: 1px 0px 8px #fff;
-  left: -5px;
+    margin: 0 auto;
+    top: 0;
+    font-weight: bolder;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    font-size: 15px;
+    color: crimson;
+    text-shadow: 1px 0px 8px #fff;
+    left: -10px;
   
 }
 
