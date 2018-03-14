@@ -1,6 +1,6 @@
 {
   "name": "Task Monster",
-  "app_id": "",
+  "app_id": "3f1a33f6",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

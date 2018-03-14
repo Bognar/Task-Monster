@@ -96,7 +96,7 @@
       <div class="tekst">
        <div class="getrow">
         <span class="texttitles">Tasks:</span>
-        <div class="hollowbar">{{fine}}
+        <div class="hollowbar"><span class="numbertop">{{fine}}</span>
           <span [style.width]="fine +'px'" class="bariswidth"></span>
         </div>
       </div>
@@ -106,7 +106,7 @@
       </div>
       <div class="getrow">
         <span class="texttitles">Growth:</span>
-        <div class="hollowbar">{{fine / 50}}<span class="bariswidth2" [style.width]="fine/20 +'px'" ></span></div>
+        <div class="hollowbar"><span class="numbertop">{{fine / 50}}</span><span class="bariswidth2" [style.width]="fine/20 +'px'" ></span></div>
       </div>
         <div class="getrow">
         <span class="texttitles">Race:</span>
@@ -129,6 +129,14 @@
       <br>
       <p>There is also another thing to keep in the mind! By finishing tasks, you can get into Hall Of Fame top 10 monster tamers.</p>
       <br> So, please be good to your {{avatar[3]}} and feed him.
+      <br>
+      <br>
+      Are you happy with {{avatar[3]}}? Please rate us or leave a review on the google play!
+      <br>
+      <a href="https://play.google.com" target="_blank"><button ion-button block round color="light" outline>Go to Google play</button></a>
     </div>
+    <br>
+    <br>
+
   </ng-template>
 </ion-content>

@@ -179,5 +179,13 @@ page-monster {
         color: #000;
         text-align: center;
       }
-      
+      .numbertop {
+        z-index:999;
+        position:relative;
+        font-weight: bolder;
+        font-size: 15px;
+      }
+      a {
+        text-decoration: none;
+      }
 }
