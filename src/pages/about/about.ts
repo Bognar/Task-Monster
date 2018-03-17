@@ -147,7 +147,6 @@ export class AboutPage {
     });
 
   }
-
 }
 
 
