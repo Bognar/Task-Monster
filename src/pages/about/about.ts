@@ -67,7 +67,6 @@ export class AboutPage {
     this.myDate = null;
     this.color = '#';
   }
-
   mStatus(fine) {
     if (fine <= 10) {
       return this.status = "Youngling";
