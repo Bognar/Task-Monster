@@ -145,7 +145,6 @@ export class AboutPage {
       this.fine = d;
 
     });
-
   }
 }
 
