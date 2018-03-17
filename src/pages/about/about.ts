@@ -32,7 +32,6 @@ import { AngularFireAuth } from 'angularfire2/auth';
       transition('void => *',animate('1000ms ease-in'))
      
     ])
-
   ]
 
 })
