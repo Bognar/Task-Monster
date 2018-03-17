@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -47,7 +48,8 @@ const firebaseAuth = {
     AngularFireModule.initializeApp(firebaseAuth),
     IonicModule.forRoot(MyApp),
     AngularFireAuthModule,
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    BrowserAnimationsModule
     
   ],
   bootstrap: [IonicApp],

@@ -9,7 +9,7 @@
     <ion-title color="light">Task Monster</ion-title>
     <ion-buttons end>
       <button ion-button icon-only color="light" (click)="monster(fine)">
-        <ion-icon name="outlet"><div class="tapitout" *ngIf="tapit == true">{{tap}}</div></ion-icon>
+        <ion-icon name="outlet"><div class="tapitout" *ngIf="tapit == true" [@popOverState]="stateName">{{tap}}</div></ion-icon>
       </button>
     </ion-buttons>
     <ion-buttons end>
@@ -75,7 +75,7 @@
 
       <ion-item>
         <ion-label fixed color="light">When:</ion-label>
-        <ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="myDate" required></ion-datetime>
+        <ion-datetime min="2018" max="2050" displayFormat="YYYY-MM-DDTHH:mm" [(ngModel)]="myDate" required></ion-datetime>
       </ion-item>
 
       <ion-item>

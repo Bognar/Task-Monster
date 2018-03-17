@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, trigger, transition, style, animate, state } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { HallPage } from '../hall/hall';
@@ -12,6 +12,28 @@ import { AngularFireAuth } from 'angularfire2/auth';
 @Component({
   selector: 'page-about',
   templateUrl: 'about.html',
+  animations: [
+    trigger('popOverState', [
+      state('show', style({
+        opacity:1
+      })),
+      state('hide', style({
+        opacity:0
+      })),
+      state('void', style({
+        opacity:0
+      })),
+      state('*', style({
+        opacity:1
+      })),
+      transition('show => hide', animate('1000ms ease-out')),
+      transition('hide => show', animate('1000ms ease-in')),
+      transition('* => *',animate('1000ms ease-in')),
+      transition('void => *',animate('1000ms ease-in'))
+     
+    ])
+
+  ]
 
 })
 
@@ -28,6 +50,7 @@ export class AboutPage {
   status: string = '';
   public tap: number = 0;
   tapit:boolean = false;
+  show = false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private db: AngularFireDatabase, private fire: AngularFireAuth) {
     this.fire.authState.subscribe(user => {
@@ -66,7 +89,11 @@ export class AboutPage {
   monster(fine) {
     this.tapit = false;
     this.tap = 0;
+    this.show = false;
     this.navCtrl.push(MonsterPage, { fine: this.fine });
+  }
+  get stateName() {
+    return this.show ? 'show' : 'hide'
   }
   hall(fine) {
     this.navCtrl.push(HallPage);
@@ -81,6 +108,8 @@ export class AboutPage {
   tapEvent(e) {
     this.tap++;
     this.tapit = true;
+    this.show = true;
+    
   }
   delete(key: string) {
     this.db.list("/tasks/" + this.userId + "/").remove(key);
