@@ -87,17 +87,19 @@
   </div>
   </div>
   <ng-template #showmymob>
-  
+  <!-- Here starts second condition view when user already chose his monster -->
     <div class="finished2">
-  
-  
-  
-  
-      <div class="tekst">
-       <div class="getrow">
+        <div class="tekst">
+       <div class="getrow" *ngIf="fine < 220">
         <span class="texttitles">Tasks:</span>
         <div class="hollowbar"><span class="numbertop">{{fine}}</span>
           <span [style.width]="fine +'px'" class="bariswidth"></span>
+        </div>
+      </div>
+      <div class="getrow" *ngIf="fine > 220">
+        <span class="texttitles">Tasks:</span>
+        <div class="hollowbar"><span class="numbertop">{{fine}}</span>
+          <span [style.width]="fine /100 +'px'" class="bariswidth" id="changeback"></span>
         </div>
       </div>
       <div class="getrow">
