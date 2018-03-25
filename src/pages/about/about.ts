@@ -103,13 +103,16 @@ export class AboutPage {
     this.navCtrl.setRoot(HomePage, this.fine);
     this.fire.auth.signOut();
   }
-  tapEvent(e) {
+ /* tapEvent(e) {
     this.tap++;
     this.tapit = true;
     this.show = true;
     
-  }
+  }*/
   delete(key: string) {
+    this.tap++;
+    this.tapit = true;
+    this.show = true;
     this.db.list("/tasks/" + this.userId + "/").remove(key);
 
     this.db.object(`/counters/${this.userId}/finished`).query.ref.transaction((finished => {
