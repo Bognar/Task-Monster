@@ -22,12 +22,12 @@ import { ResetPage } from '../pages/reset/reset';
 
 
 const firebaseAuth = {
-  apiKey: "AIzaSyAvF3OOIEsNc893LB6cYLjupvVgX4Kh3Wk",
-  authDomain: "loginproject-4cc14.firebaseapp.com",
-  databaseURL: "https://loginproject-4cc14.firebaseio.com",
-  projectId: "loginproject-4cc14",
-  storageBucket: "loginproject-4cc14.appspot.com",
-  messagingSenderId: "606759021030"
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: ""
 };
 
 @NgModule({
